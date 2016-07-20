@@ -1,4 +1,4 @@
-FROM anapsix/alpine-java:jre8
+FROM java:8
 MAINTAINER Marcel Maatkamp <m.maatkamp@gmail.com>
 
 RUN apk update && apk add curl
