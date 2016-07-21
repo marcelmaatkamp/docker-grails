@@ -4,6 +4,8 @@ MAINTAINER Marcel Maatkamp <m.maatkamp@gmail.com>
 RUN mkdir /app
 WORKDIR /app
 
+RUN apt-get update && apt-get install -y vim
+
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN curl -s get.sdkman.io | bash
 RUN bash -c "source $HOME/.sdkman/bin/sdkman-init.sh && sdk install grails &&\
