@@ -4,7 +4,7 @@ MAINTAINER Marcel Maatkamp <m.maatkamp@gmail.com>
 RUN mkdir /app
 WORKDIR /app
 
-RUN apt-get update && apt-get install -y vim tmux
+RUN apt-get update && apt-get install -y vim tmux telnet axel wget
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN curl -s get.sdkman.io | bash
