@@ -1,0 +1,7 @@
+version: '2'
+services:
+ grails:
+  image: marcelmaatkamp/docker-grails
+  command: -reloading run-app
+  volumes:
+   - ./volumes/grails/admin:/app:rw
