@@ -1,6 +1,6 @@
 # Grails docker via sdkman
 
-docker-compose:
+docker-compose.yml:
 ```
 version: '2'
 services:
