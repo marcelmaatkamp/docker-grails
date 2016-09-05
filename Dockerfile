@@ -15,4 +15,6 @@ RUN bash -c "source $HOME/.sdkman/bin/sdkman-init.sh && sdk install grails &&\
     rm -rf master &&\
     rm -rf grails-profile-repository-master"
 
-CMD ["/root/.sdkman/candidates/grails/current/bin/grails", "run-app"]
+CMD ["/root/.sdkman/candidates/grails/current/bin/grails ||\
+   rm -rf /app/build &&\
+   /root/.sdkman/candidates/grails/current/bin/grails"]
